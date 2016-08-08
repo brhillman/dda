@@ -1,0 +1,8 @@
+set terminal postscript enhanced color
+set output "i1morph_mid.ps"
+set title "i=1, R = 10^6"
+set key off
+set xrange [0:300]
+set yrange [0:300]
+set size square
+plot '~/research/data/data0052/morph.05.data'

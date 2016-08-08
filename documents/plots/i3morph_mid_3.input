@@ -1,0 +1,8 @@
+set terminal postscript enhanced color
+set output "i3morph_mid_3.ps"
+set title "{/Symbol D}E_1 = 0.3, R = 10^6"
+set key off
+set xrange [0:300]
+set yrange [0:300]
+set size square
+plot '~/research/data/data0952/morph.05.data'

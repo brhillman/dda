@@ -1,0 +1,8 @@
+set terminal postscript enhanced color
+set output "i3morph_zoom.ps"
+set title "i=3 morphology, high D/F"
+set key off
+set xrange [100:200]
+set yrange [100:200]
+set size square
+plot '~/research/data/data0403/morph.05.data'

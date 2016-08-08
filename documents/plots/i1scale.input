@@ -1,0 +1,12 @@
+set terminal postscript enhanced color
+set output "i1scale.ps"
+set title "i=1 scaling distribution"
+unset xrange
+unset yrange
+set xlabel "s/<s>"
+set ylabel "N_s ({/Symbol q}) <s>^2 / {/Symbol q}"
+f(x) = 1.114239986*x*exp(-0.2655*x**(3.766478343))
+g(x) = 1.20899302*x*exp(-(1.133731087*x-1.0/2.0)**2)
+plot '~/research/data/scaledi1/scaled.05.data' title "simulation data", \
+f(x) title "Amar and Family curve" with lines linewidth 5, \
+g(x) title "simple gaussian" with lines linewidth 5;

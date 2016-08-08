@@ -1,0 +1,8 @@
+set terminal postscript enhanced color
+set output "i1morph_zoom.ps"
+set title "i=1 morphology, high D/F"
+set key off
+set xrange [100:200]
+set yrange [100:200]
+set size square
+plot '~/research/data/data0387/morph.05.data'

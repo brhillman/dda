@@ -1,0 +1,17 @@
+load "sizes/functions.input"
+load "sizes/sizes.input"
+set term postscript color enhanced eps
+set out "i3r4e10.eps"
+set title "i = 3, R = 4, {/Symbol D}E_1 = 0.10"
+set key off
+set multiplot
+plot "sizes/i3r4e10/scaled.7.data", h3(x)
+set title " "
+set origin 0.5,0.5
+set size 0.5,0.5
+unset tics
+set xrange [100:200]
+set yrange [100:200]
+set xlabel ""
+set ylabel ""
+plot "morph/i3r4e10/morph.7.data"

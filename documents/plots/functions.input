@@ -1,0 +1,10 @@
+set terminal postscript enhanced color
+set output "functions.ps"
+set title "i=3 scaling functions"
+set xlabel "s/<s>"
+set ylabel "N_s ({/Symbol q}) <s>^2 / {/Symbol q}"
+set xrange [0:3]
+f(x) = 3.2385*x**3.0*exp(-3.0*0.3086*x**(1.0/0.3086))
+g(x) = 4.0**4.0/6.0*x**3.0*exp(-4.0*x)
+plot f(x) title "Amar and Family curve" with lines linewidth 5, \
+g(x) title "Our old curve" with lines linewidth 5;
